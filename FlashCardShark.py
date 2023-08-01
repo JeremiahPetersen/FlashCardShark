@@ -73,3 +73,5 @@ def convert_to_flashcards(text):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
+# Path: templates/index.html
