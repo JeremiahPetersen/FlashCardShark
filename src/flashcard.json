@@ -1,0 +1,190 @@
+[
+    {
+        "Question": "Acceptance Testing",
+        "Answer": "The Beta testing stage of the SDP"
+    },
+    {
+        "Question": "Adaptive Maintenance",
+        "Answer": "Changing the software in response to changes in the client's hardware"
+    },
+    {
+        "Question": "Analysis",
+        "Answer": "First stage of the SDP concerned with gathering knowledge and understanding the problem"
+    },
+    {
+        "Question": "Bottom-up Design",
+        "Answer": "A design methodology which begins with writing procedures and blocks of code"
+    },
+    {
+        "Question": "Compiler",
+        "Answer": "Translates a high level language program into object code"
+    },
+    {
+        "Question": "Comprehensive Testing",
+        "Answer": "Testing programs as thoroughly as possible"
+    },
+    {
+        "Question": "Concatenation",
+        "Answer": "Joining strings together"
+    },
+    {
+        "Question": "Corrective Maintenance",
+        "Answer": "Fixing bugs or mistakes which were not discovered at the testing stage"
+    },
+    {
+        "Question": "Counting Occurrences",
+        "Answer": "Used to count how many times a value appears in a list"
+    },
+    {
+        "Question": "Data Flow",
+        "Answer": "The movement of data between subprograms, implemented using parameters"
+    },
+    {
+        "Question": "Data Types",
+        "Answer": "Types of data stored by a program including string, integer, real, single"
+    },
+    {
+        "Question": "Array",
+        "Answer": "A data structure in which data items of the same type are grouped together"
+    },
+    {
+        "Question": "Debugging",
+        "Answer": "The process of finding and correcting errors in a program"
+    },
+    {
+        "Question": "Design",
+        "Answer": "A stage of SDP that involves the planning of a solution to the problem"
+    },
+    {
+        "Question": "Design Notation",
+        "Answer": "A way of describing the design of a program eg. pseudocode or structure diagram"
+    },
+    {
+        "Question": "Documentation",
+        "Answer": "A stage of the SDP where a user guide and technical guide are produced"
+    },
+    {
+        "Question": "Efficiency",
+        "Answer": "Software is evaluated for excessive resource use such as memory or backing storage"
+    },
+    {
+        "Question": "Exceptional Test Data",
+        "Answer": "Test data which should be rejected by the program under test conditions"
+    },
+    {
+        "Question": "Exhaustive Testing",
+        "Answer": "Involves all the possible sets of test data and all of the program pathways"
+    },
+    {
+        "Question": "Extreme Test Data",
+        "Answer": "Test data which is on the boundary of what is acceptable by the program"
+    },
+    {
+        "Question": "Field Testing",
+        "Answer": "Allowing users other than the programmers to test the program"
+    },
+    {
+        "Question": "Fixed Loops",
+        "Answer": "A loop which is carried out a set number of times"
+    },
+    {
+        "Question": "Flow Chart",
+        "Answer": "A design notation using boxes linked by arrows showing data flow"
+    },
+    {
+        "Question": "Input Validation",
+        "Answer": "Used to check that data input is with an acceptable range"
+    },
+    {
+        "Question": "Interpreter",
+        "Answer": "Translates and runs a high level language one line at a time"
+    },
+    {
+        "Question": "Iteration",
+        "Answer": "Revisiting or repeating steps in the SDP to improve the solution"
+    },
+    {
+        "Question": "Linear Search",
+        "Answer": "Used to find a target value in a full list"
+    },
+    {
+        "Question": "Local Variable",
+        "Answer": "Variables defined only for use in one subprogram"
+    },
+    {
+        "Question": "Maintainability",
+        "Answer": "An evaluation criterion that determines how easy it is to maintain a program"
+    },
+    {
+        "Question": "Modularity",
+        "Answer": "When a program is divided into smaller sections called subprograms"
+    },
+    {
+        "Question": "Module Library",
+        "Answer": "Pre-defined and tested subprograms which speed up the SDP"
+    },
+    {
+        "Question": "Normal Test Data",
+        "Answer": "Test data which is within a range that the program should accept"
+    },
+    {
+        "Question": "Perfective Maintenance",
+        "Answer": "Adding new features to a program and the request and cost of the client"
+    },
+    {
+        "Question": "Portability",
+        "Answer": "An evaluation criterion that assesses if the software can be used on a computer other than the one on which it was designed"
+    },
+    {
+        "Question": "Programmer",
+        "Answer": "Writes code working to a software specification"
+    },
+    {
+        "Question": "Project Manager",
+        "Answer": "In charge of the whole software development process"
+    },
+    {
+        "Question": "Pseudocode",
+        "Answer": "A text-based design notation using ordinary language to define a problem"
+    },
+    {
+        "Question": "Readability",
+        "Answer": "How easy it is for your program to be read by anyone else"
+    },
+    {
+        "Question": "Reliability",
+        "Answer": "How well your program operates without stopping due to design faults"
+    },
+    {
+        "Question": "Robustness",
+        "Answer": "The ability of software to cope with errors during execution without crashing"
+    },
+    {
+        "Question": "Software Specification",
+        "Answer": "Legally binding document defining the problem"
+    },
+    {
+        "Question": "Stepwise Refinement",
+        "Answer": "Breaks each step down as far as possible until each step can be turned into a line of code"
+    },
+    {
+        "Question": "Structure Diagram",
+        "Answer": "A design notation using different shaped boxes and showing hierarchy"
+    },
+    {
+        "Question": "Substrings",
+        "Answer": "a contiguous sequence of characters within a string"
+    },
+    {
+        "Question": "Technical Guide",
+        "Answer": "Documentation designed for technical personnel that explains how to install software"
+    },
+    {
+        "Question": "User Guide",
+        "Answer": "Documentation that explains how to operate the software once it has been installed"
+    },
+    {
+        "Question": "Systems Analyst",
+        "Answer": "Interviews company personnel and observes current procedures looking for ways to improve the system"
+    }
+]

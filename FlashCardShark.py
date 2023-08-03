@@ -3,13 +3,14 @@ import requests
 from bs4 import BeautifulSoup
 from docx import Document
 import os
+import json
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
 UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'docx'}
+ALLOWED_EXTENSIONS = {'docx', 'json'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -22,18 +23,23 @@ def index():
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
-    if 'file' not in request.files:
-        return jsonify({"error": "No file part"})
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({"error": "No selected file"})
+    # Get the file
+    file = request.files.get('file')
+    
     if file and allowed_file(file.filename):
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filepath)
-        cards = process_document(filepath)
+
+        # Check the file type
+        if file.filename.rsplit('.', 1)[1].lower() == 'json':
+            with open(filepath, 'r') as json_file:
+                cards = json.load(json_file)
+        else:
+            cards = process_document(filepath)
+
         return jsonify(cards)
     else:
-        return jsonify([{"error": "No file part"}])
+        return jsonify([{"error": "Invalid file type"}])
 
 @app.route('/scrape', methods=['POST'])
 def scrape_webpage():

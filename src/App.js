@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
+import FlashCard from "./FlashCard";
+import flashcardData from "./flashcard.json";
 
 function App() {
   const [url, setUrl] = useState("");
   const [file, setFile] = useState(null);
   const [userText, setUserText] = useState(""); // NEW: state for user text
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState(flashcardData);
 
   const onUploadFile = async () => {
     const formData = new FormData();
@@ -77,12 +79,7 @@ function App() {
       </div>{" "}
       {/* This is the correct closing tag for inputContainer div */}
       <div className="outputContainer">
-        {cards.map((card, idx) => (
-          <div key={idx}>
-            <h3>Question: {card.question}</h3>
-            <p>Answer: {card.answer}</p>
-          </div>
-        ))}
+        {cards.length > 0 && <FlashCard cards={cards} />}
       </div>
     </div>
   );
