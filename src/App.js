@@ -47,6 +47,9 @@ function App() {
 
   return (
     <div className="container">
+      <div className="outputContainer">
+        {cards.length > 0 && <FlashCard cards={cards} />}
+      </div>
       <div className="inputContainer">
         <input
           type="file"
@@ -78,9 +81,6 @@ function App() {
         </button>
       </div>{" "}
       {/* This is the correct closing tag for inputContainer div */}
-      <div className="outputContainer">
-        {cards.length > 0 && <FlashCard cards={cards} />}
-      </div>
     </div>
   );
 }
