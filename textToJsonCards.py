@@ -25,8 +25,14 @@ def generate_filename_with_timestamp(base_name="flashcards", extension="json"):
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"{base_name}_{timestamp}.{extension}"
 
-# Sample Input
+# Text Input (adjust to accept .txt file)
 text = """
+Acceptance Testing
+The Beta testing stage of the SDP
+
+Acceptance Testing
+The Beta testing stage of the SDP
+
 Acceptance Testing
 The Beta testing stage of the SDP
 
