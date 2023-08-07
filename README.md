@@ -1,4 +1,4 @@
 # FlashCardShark
 
-Simple app to turn a website or a document into flash cards
-Project is in early stage, more coming soon!
+Simple app to turn a website or a document into flash cards.
+This project is in the early stages, more coming soon!
