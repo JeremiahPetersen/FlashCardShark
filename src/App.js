@@ -6,7 +6,7 @@ import flashcardData from "./flashcard.json";
 function App() {
   const [url, setUrl] = useState("");
   const [file, setFile] = useState(null);
-  const [userText, setUserText] = useState(""); // NEW: state for user text
+  const [userText, setUserText] = useState("");
   const [cards, setCards] = useState(flashcardData);
 
   const onUploadFile = async () => {
@@ -31,7 +31,7 @@ function App() {
     if (Array.isArray(data)) {
       setCards(data);
     } else {
-      // handle the error, e.g., show a message to the user
+      // create handle for error
     }
   };
 
@@ -39,7 +39,7 @@ function App() {
     const response = await fetch("http://localhost:5000/text-to-cards", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: `text=${encodeURIComponent(userText)}`, // make sure to URL encode the text
+      body: `text=${encodeURIComponent(userText)}`,
     });
     const data = await response.json();
     setCards(data);
@@ -80,7 +80,7 @@ function App() {
           Convert Text to Flashcards
         </button>
       </div>{" "}
-      {/* This is the correct closing tag for inputContainer div */}
+      {/* correct closing tag for inputContainer div */}
     </div>
   );
 }

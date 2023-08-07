@@ -1,6 +1,6 @@
 // FlashCard.js
 import React, { useState } from "react";
-import "./FlashCard.css"; // Create a separate CSS for styling
+import "./FlashCard.css";
 
 function FlashCard({ cards }) {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -5,7 +5,7 @@ def text_to_flashcards(text):
     # Split the text by lines and filter out any empty lines
     lines = [line.strip() for line in text.split('\n') if line.strip()]
 
-    # Ensure we have an even number of lines
+    # Make sure we have an even number of lines
     if len(lines) % 2 != 0:
         raise ValueError("The input text does not have matching question-answer pairs.")
 
@@ -21,7 +21,7 @@ def text_to_flashcards(text):
     return flashcards
 
 def generate_filename_with_timestamp(base_name="flashcards", extension="json"):
-    # Get the current timestamp in a string format YYYYMMDD_HHMMSS
+    # Get the current timestamp
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"{base_name}_{timestamp}.{extension}"
 
